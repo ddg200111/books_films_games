@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Pirates of the Caribbean</title>
+	<style>
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.row {
+  display: flex;
+}
+
+.column {
+  flex: 33.33%;
+  padding: 5px;
+}
+	</style>
+    </head>
+    <body>
+<div class="row">
+  <div class="column">
+    <img src="./images/PotC1.jpg" width="230" height="300">
+  </div>
+  <div class="column">
+    <img src="./images/PotC2.jpg" width="230" height="300">
+  </div>
+<div class="column">
+    <img src="./images/PotC3.jpg" width="230" height="300">
+  </div>
+</div>
+<div class="row">
+  <div class="column">
+    <img src="./images/PotC4.jpg" width="230" height="300">
+  </div>
+  <div class="column">
+    <img src="./images/PotC5.jpg" width="230" height="300">
+  </div>
+</div>
+	<br><button id="back" style="width: 150px;height: 50px;font-size: 20px;" onClick="document.location='films.html'">Back</button>
+    </body>
+</html>
